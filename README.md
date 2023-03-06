@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Felix Ardy Mulya</h1>
-<h3 align="center">Software Engineer student at Tunghai University who is passionate about coding, especially in full stack development.</h3>
+<h1 align="left">Hi 👋, I'm Felix Ardy Mulya</h1>
+<h3 align="left">Software Engineer student at Tunghai University who is passionate about coding, especially in full stack development.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yungaus88&label=Profile%20views&color=0e75b6&style=flat" alt="yungaus88" /> </p>
 
