@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **Next.js, TypeScript and BackEnd Development**
 
-- 📄 [My Resume](https://github.com/YungAus88/felixmulya-resume/blob/main/Resume-FelixArdyMulya.pdf)
+- 📄 [My Resume](https://github.com/YungAus88/YungAus88/blob/main/Resume-FelixArdyMulya.pdf)
 
 - 📫 Reach me: **felixmulya777@gmail.com**
 
