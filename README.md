@@ -3,7 +3,7 @@
 
 - 🏫 **Computer Science Major at Tunghai University**
 
-- 🧑‍💻 I’m currently working at **Ackuretta**
+- 🧑‍💻 I’m currently working at **Ackuretta Ackuretta Technologies Pvt. Ltd.**
 
 - 🌱 I’m currently learning **Vue.js and BackEnd Development**
 
