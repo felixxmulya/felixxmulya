@@ -5,7 +5,7 @@
 
 - 🧑‍💻 I’m currently working at **Ackuretta**
 
-- 🌱 I’m currently learning **Next.js, TypeScript and BackEnd Development**
+- 🌱 I’m currently learning **Vue.js and BackEnd Development**
 
 - 🖥️ My Personal Website: [https://felixam.vercel.app/](https://felixam.vercel.app/)
 
