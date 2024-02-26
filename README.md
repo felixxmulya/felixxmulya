@@ -9,7 +9,7 @@
 
 - 🖥️ My Personal Website: [https://felixam.vercel.app/](https://felixam.vercel.app/)
 
-- 📄 [My Resume](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f64d282e-89e5-41fb-8def-70c49e1e5e45)
+- 📄 [My Resume](https://docs.google.com/document/d/1GK-hlW9LKLLZci1aUJ8tXcYtb4ATqmaDt4yAZM_od7Y/edit?usp=sharing)
 
 - 📫 Reach me: **felixmulya777@gmail.com**
 
