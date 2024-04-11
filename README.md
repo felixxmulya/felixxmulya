@@ -9,7 +9,7 @@
 
 - 🖥️ My Personal Website: [https://felixam.vercel.app/](https://felixam.vercel.app/)
 
-- 📄 [My Resume](https://docs.google.com/document/d/1GK-hlW9LKLLZci1aUJ8tXcYtb4ATqmaDt4yAZM_od7Y/edit?usp=sharing)
+- 📄 [My Resume](https://www.cakeresume.com/felix-ardy-mulya)
 
 - 📫 Reach me: **felixmulya777@gmail.com**
 
