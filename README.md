@@ -1,4 +1,4 @@
-<h1 style="center">Hi <img src="https://media.tenor.com/xFpNlXxL6oQAAAAi/hi-good-afternoon.gif" alt="Waving hand animation"/> I'm Felix</h1>
+<h1 style="center">Hi <img src="https://media.tenor.com/xFpNlXxL6oQAAAAi/hi-good-afternoon.gif" alt="Waving hand animation"/>, I'm Felix</h1>
 
 <h3 align="center">Full Stack Developer at Ackuretta | Software Engineer | Constantly Learning and Exploring New Technologies</h3>
 
