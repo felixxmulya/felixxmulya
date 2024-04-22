@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Felix</h1>
-<h3 align="center">Passionate Front-End Developer | Enthusiastic about Creating User-Centric Web Experiences | Constantly Learning and Exploring New Technologies</h3>
+<h3 align="center">Full Stack Developer at Ackuretta | Software Engineer | Constantly Learning and Exploring New Technologies</h3>
 
 - 🏫 **Computer Science Major at Tunghai University**
 
