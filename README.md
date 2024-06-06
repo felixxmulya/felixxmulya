@@ -6,8 +6,6 @@
 
 - 🧑‍💻 I’m currently working at **Ackuretta Technologies Pvt. Ltd.**
 
-- 🌱 I’m currently learning **Vue.js and BackEnd Development**
-
 - 🖥️ My Personal Website: [https://felixam.vercel.app/](https://felixam.vercel.app/)
 
 - 📄 [My Resume](https://www.cakeresume.com/felix-ardy-mulya)
