@@ -39,7 +39,7 @@ export default function Jumbotron() {
          </div>
          <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <Image
-               src="/doodles_jumping.png"
+               src="/images/doodles_jumping.png"
                alt="doodles jumping"
                width={800}
                height={800}

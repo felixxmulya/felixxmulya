@@ -17,7 +17,7 @@ export default function Project() {
             'Implemented Google Tag Manager and optimized SEO.',
             'Built a CI/CD pipeline using Bitbucket.',
          ],
-         imageUrl: '/ackuretta.png',
+         imageUrl: '/images/ackuretta.png',
          link: 'https://www.ackuretta.com'
       },
       {
@@ -26,7 +26,7 @@ export default function Project() {
             'Developed a Spotify clone application using Vue.js and integrated the Spotify API to fetch and display music data, enabling users to play music and browse playlists.',
             'Implemented audio playback functionality that provided a seamless music listening experience, similar to Spotify.'
          ],
-         imageUrl: '/spotify.png',
+         imageUrl: '/images/spotify.png',
          link: 'https://vue-spotify88-clone.vercel.app',
          github: 'https://github.com/felixxmulya/vue-spotify'
       },
@@ -37,7 +37,7 @@ export default function Project() {
             "Implemented secure user authentication, dynamic form handling, and efficient data synchronization for personalized invoice creation and accurate tracking of invoice information.",
             "Added full CRUD functionality, allowing users to create, edit, and delete invoices, with the option to download invoices as PDFs."
          ],
-         imageUrl: '/invoice.png',
+         imageUrl: '/images/invoice.png',
          link: 'https://mitrainvoice.vercel.app',
          github: 'https://github.com/felixxmulya/invoice-system'
       }

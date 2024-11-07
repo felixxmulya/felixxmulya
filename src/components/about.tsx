@@ -12,7 +12,7 @@ export default function About() {
          <div className="w-auto md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <div>
                <Image
-                  src="/felix.jpg"
+                  src="/images/felix.jpg"
                   alt="profile"
                   width={500}
                   height={500}
