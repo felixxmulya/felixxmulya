@@ -43,7 +43,7 @@ export default function Contact() {
          } else {
             setError("An error occurred. Please try again later.");
          }
-      } catch (error) {
+      } catch {
          setError("An error occurred. Please try again later.");
       }
    }
