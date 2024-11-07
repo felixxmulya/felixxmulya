@@ -1,14 +1,12 @@
 <h1 style="center">Hi <img src="https://media.tenor.com/xFpNlXxL6oQAAAAi/hi-good-afternoon.gif" alt="Waving hand animation" style="width: 70px; vertical-align: bottom;"/>, I'm Felix</h1>
 
-<h3 align="center">Full Stack Developer at Ackuretta | Software Engineer | Constantly Learning and Exploring New Technologies</h3>
+<h3 align="center">Full Stack Developer | Software Engineer</h3>
 
 - 🏫 **Computer Science Major at Tunghai University**
 
-- 🧑‍💻 I’m currently working at **Ackuretta Technologies Pvt. Ltd.**
+- 🖥️ My Personal Website: [https://felixmulya.vercel.app/](https://felixmulya.vercel.app/)
 
-- 🖥️ My Personal Website: [https://felixam.vercel.app/](https://felixam.vercel.app/)
-
-- 📄 [My Resume](https://www.cakeresume.com/felix-ardy-mulya)
+- 📄 [My Resume](https://docs.google.com/document/d/1GK-hlW9LKLLZci1aUJ8tXcYtb4ATqmaDt4yAZM_od7Y/edit?usp=sharing)
 
 - 📫 Reach me: **felixmulya777@gmail.com**
 
