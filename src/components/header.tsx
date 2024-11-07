@@ -10,13 +10,12 @@ export default function Header() {
 
   const navLinks = [
     { href: 'about', label: 'About' },
-    { href: 'skills', label: 'Skills' },
     { href: 'experience', label: 'Experience' },
+    { href: 'skills', label: 'Skills' },
     { href: 'project', label: 'Project' },
     { href: 'contact', label: 'Contact' }
   ];
 
-  // Close the menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {

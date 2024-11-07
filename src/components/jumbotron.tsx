@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Jumbotron() {
    const socialLinks = [
       { href: 'https://github.com/felixxmulya', icon: faGithub, label: 'GitHub' },
       { href: 'https://www.linkedin.com/in/felix-ardy-mulya/', icon: faLinkedin, label: 'LinkedIn' },
+      { href: 'mailto:felixmulya777@gmail.com', icon: faEnvelope, label: 'Email' }
    ];
 
    return (
@@ -14,7 +16,7 @@ export default function Jumbotron() {
             <span className='text-lg text-gray-600'>
                Hello, my name is
             </span>
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-6xl font-bold">
                Felix Ardy Mulya.
             </h1>
             <p className="text-gray-600 mt-4">

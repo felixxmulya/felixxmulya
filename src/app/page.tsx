@@ -4,6 +4,9 @@ import Header from "../components/header";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Jumbotron from "@/components/jumbotron";
+import Experience from "@/components/experience";
+import Project from "@/components/project";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -11,7 +14,10 @@ export default function Home() {
       <Header/>
       <Jumbotron/>
       <About/>
+      <Experience/>
       <Skills/>
+      <Project/>
+      <Contact/>
     </div>
   );
 }
