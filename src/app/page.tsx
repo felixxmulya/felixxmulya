@@ -7,6 +7,7 @@ import Jumbotron from "@/components/jumbotron";
 import Experience from "@/components/experience";
 import Project from "@/components/project";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills/>
       <Project/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

@@ -16,7 +16,6 @@ export default function About() {
                   alt="profile"
                   width={500}
                   height={500}
-                  objectFit="cover"
                   className="rounded-xl"
                />
             </div>

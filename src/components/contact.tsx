@@ -1,104 +1,110 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
-
-type FormData = {
-   name: string;
-   email: string;
-   message: string;
-};
-
-const socialMedia = [
-   { icon: faLinkedin, name: 'LinkedIn', link: 'https://www.linkedin.com/in/felix-ardy-mulya/' },
-   { icon: faGithub, name: 'Github', link: 'https://github.com/felixxmulya' },
-   { icon: faEnvelope, name: 'Email', link: 'mailto:felixmulya777@gmail.com' },
-];
-
 export default function Contact() {
-   const [formData, setFormData] = useState<FormData>({
-      name: '',
-      email: '',
-      message: '',
-   });
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+   const [message, setMessage] = useState('');
+   const [error, setError] = useState('');
+   const [success, setSuccess] = useState('');
 
-   const [status, setStatus] = useState<string>('');
+   const socialMedia = [
+      { icon: faLinkedin, name: 'LinkedIn', link: 'https://www.linkedin.com/in/felix-ardy-mulya/' },
+      { icon: faGithub, name: 'Github', link: 'https://github.com/felixxmulya' },
+      { icon: faEnvelope, name: 'Email', link: 'mailto:felixmulya777@gmail.com' },
+   ];
 
-   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = e.target;
-      setFormData((prev) => ({ ...prev, [name]: value }));
-   };
-
-   const handleSubmit = async (e: FormEvent) => {
+   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
       e.preventDefault();
-      setStatus('Sending...');
+      e.stopPropagation();
 
       try {
-         const res = await fetch('/api/contact', {
+         const response = await fetch(`https://formcarry.com/s/${process.env.NEXT_PUBLIC_FORMCARRY_KEY}`, {
             method: 'POST',
             headers: {
-               'Content-Type': 'application/json',
+               "Accept": "application/json",
+               "Content-Type": "application/json"
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify({ name, email, message })
          });
 
-         if (res.status === 200) {
-            setStatus('Message sent successfully!');
-            setFormData({ name: '', email: '', message: '' });
+         const result = await response.json();
+
+         if (result.code === 200) {
+            setSuccess("We received your submission, thank you!");
+            setName('');
+            setEmail('');
+            setMessage('');
+         } else if (result.code === 422) {
+            setError("Please fill in all fields correctly.");
          } else {
-            setStatus('Failed to send message.');
+            setError("An error occurred. Please try again later.");
          }
       } catch (error) {
-         setStatus('Error sending message.');
+         setError("An error occurred. Please try again later.");
       }
-   };
+   }
 
    return (
-      <div className="flex flex-col md:flex-row p-8 bg-white text-gray-900">
-         {/* Form Section */}
-         <form onSubmit={handleSubmit} className="flex-1 space-y-4">
-            <input
-               type="text"
-               name="name"
-               value={formData.name}
-               onChange={handleChange}
-               placeholder="Your name"
-               required
-               className="w-full p-3 border rounded-lg"
-            />
-            <input
-               type="email"
-               name="email"
-               value={formData.email}
-               onChange={handleChange}
-               placeholder="Email"
-               required
-               className="w-full p-3 border rounded-lg"
-            />
-            <textarea
-               name="message"
-               value={formData.message}
-               onChange={handleChange}
-               placeholder="How can I help?"
-               required
-               className="w-full p-3 border rounded-lg h-32"
-            />
-            <button type="submit" className="w-full p-3 bg-black hover:bg-zinc-800 text-white rounded-lg font-semibold">
-               Get In Touch
-            </button>
-            <p>{status}</p>
-         </form>
+      <div className="flex flex-col-reverse md:flex-row p-8 bg-white text-gray-900 items-center justify-center h-screen">
+         <form onSubmit={onSubmit} className="flex-1 space-y-4 p-4 max-w-lg mx-auto">
+            <div className="formcarry-block">
+               <label htmlFor="name">Full Name</label>
+               <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  id="name"
+                  placeholder="Your first and last name"
+                  required
+                  className="w-full p-2 border rounded"
+               />
+            </div>
 
-         {/* Text Section */}
-         <div className="flex-1 md:pl-12 mt-8 md:mt-0">
-            <h2 className="text-3xl font-bold mb-2">Let's <span className="text-black">talk</span> for</h2>
-            <h3 className="text-2xl font-bold mb-4">Something special</h3>
+            <div className="formcarry-block">
+               <label htmlFor="email">Your Email Address</label>
+               <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  id="email"
+                  placeholder="john@doe.com"
+                  required
+                  className="w-full p-2 border rounded"
+               />
+            </div>
+
+            <div className="formcarry-block">
+               <label htmlFor="message">Your Message</label>
+               <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  id="message"
+                  placeholder="Enter your message..."
+                  required
+                  className="w-full p-2 border rounded h-32"
+               ></textarea>
+            </div>
+
+            <div className="formcarry-block">
+               <button type="submit" className="w-full p-2 bg-black hover:bg-zinc-800 text-white rounded font-bold">
+                  Get in Touch
+               </button>
+            </div>
+
+            {error && <p className="text-red-500 mt-2">{error}</p>}
+            {success && <p className="text-green-500 mt-2">{success}</p>}
+         </form>
+         <div className="flex-1 md:pl-12 mt-8 md:mt-0 flex-col text-center">
+            <h2 className="text-6xl font-bold mb-2">Let's <span className="text-black">talk</span> for</h2>
+            <h3 className="text-3xl font-bold mb-4">Something special</h3>
             <p className="text-gray-600 mb-6">
-               I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.
+               I'm always open to new projects, collaborations, or employment opportunities. Feel free to reach out to me!
             </p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex space-x-4 mt-4 justify-center">
                {socialMedia.map((platform) => (
                   <Link key={platform.name} href={platform.link} target="_blank" rel="noopener noreferrer">
                      <button key={platform.name} className="hover:text-gray-500 space-x-4">
