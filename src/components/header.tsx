@@ -12,7 +12,7 @@ export default function Header() {
     { href: 'about', label: 'About' },
     { href: 'experience', label: 'Experience' },
     { href: 'skills', label: 'Skills' },
-    { href: 'project', label: 'Project' },
+    { href: 'project', label: 'Projects' },
     { href: 'contact', label: 'Contact' }
   ];
 
@@ -64,7 +64,7 @@ export default function Header() {
   };
 
   return (
-    <div className={`fixed top-0 left-0 right-0 p-6 ${isScrolled ? 'bg-white shadow-md ' : 'bg-white'}`}>
+    <div className={`fixed top-0 left-0 right-0 z-50 p-6 ${isScrolled ? 'bg-white shadow-md ' : 'bg-white'}`}>
       <div className="max-w-2xl md:max-w-6xl mx-auto flex flex-row justify-between items-center px-6">
       <Link
         className="text-2xl font-semibold"

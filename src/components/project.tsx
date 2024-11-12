@@ -44,7 +44,7 @@ export default function Project() {
    ];
 
    return (
-      <section id="project" className="h-auto text-gray-900 p-8">
+      <section data-aos="fade-up" id="project" className="h-auto text-gray-900 p-8">
          <h2 className="text-4xl font-light text-center mb-12">
             My <span className="font-bold">Projects</span>
          </h2>
@@ -56,13 +56,13 @@ export default function Project() {
                      } items-center transition-transform duration-300`}
                >
                   <div className="w-full md:w-1/2">
-                     <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                     <Link href={project.link} target="_blank">
                         <Image
                            src={project.imageUrl}
                            alt={project.title}
                            width={500}
                            height={500}
-                           className="rounded-lg shadow-lg w-full"
+                           className="rounded-lg shadow-lg w-full transform transition-transform duration-300 hover:-translate-y-2"
                         />
                      </Link>
                   </div>
@@ -114,7 +114,7 @@ export default function Project() {
                               alt={project.title}
                               width={500}
                               height={500}
-                              className="rounded-lg shadow-lg w-full"
+                              className="rounded-lg shadow-lg w-full "
                            />
                         </Link>
                      </div>

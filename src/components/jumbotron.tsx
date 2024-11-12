@@ -11,7 +11,7 @@ export default function Jumbotron() {
    ];
 
    return (
-      <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between mx-auto max-w-6xl py-16 px-6">
+      <section data-aos="fade-up" className="h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between mx-auto max-w-6xl py-16 px-6">
          <div className="md:w-1/2 space-y-4">
             <span className='text-lg text-gray-600'>
                Hello, my name is

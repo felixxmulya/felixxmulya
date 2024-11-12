@@ -16,7 +16,7 @@ export default function Experience() {
    ];
 
    return (
-      <section id="experience" className="h-auto md:h-[60vh] p-8">
+      <section id="experience" className="h-auto md:h-[60vh] p-4 md:p-8">
          <h2 className="text-4xl font-light text-center mb-8">
             My <span className="font-bold">Experience</span>
          </h2>
