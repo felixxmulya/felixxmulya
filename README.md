@@ -4,7 +4,7 @@
 
 - 🏫 **Computer Science Major at Tunghai University**
 
-- 🖥️ My Personal Website: [https://felixmulya.vercel.app/](https://felixmulya.com)
+- 🖥️ My Personal Website: [https://felixmulya.com](https://felixmulya.com)
 
 - 📄 [My Resume](https://docs.google.com/document/d/1GK-hlW9LKLLZci1aUJ8tXcYtb4ATqmaDt4yAZM_od7Y/edit?usp=sharing)
 
