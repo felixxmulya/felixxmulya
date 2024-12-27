@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import Header from "../components/header";
-import About from "@/components/about";
-import Skills from "@/components/skills";
-import Jumbotron from "@/components/jumbotron";
-import Experience from "@/components/experience";
-import Project from "@/components/project";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
+import Header from "./components/header";
+import About from "@/app/components/about";
+import Skills from "@/app/components/skills";
+import Jumbotron from "@/app/components/jumbotron";
+import Experience from "@/app/components/experience";
+import Project from "@/app/components/project";
+import Contact from "@/app/components/contact";
+import Footer from "@/app/components/footer";
 
 export default function Home() {
   return (

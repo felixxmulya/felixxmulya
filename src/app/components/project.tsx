@@ -21,14 +21,16 @@ export default function Project() {
          link: 'https://www.ackuretta.com'
       },
       {
-         title: 'Spotify Clone',
+         title: 'BursaLens: IDX Stock Predictor',
          description: [
-            'Developed a Spotify clone application using Vue.js and integrated the Spotify API to fetch and display music data, enabling users to play music and browse playlists.',
-            'Implemented audio playback functionality that provided a seamless music listening experience, similar to Spotify.'
+            'Developed machine learning stock prediction system using LSTM neural network, Python, TensorFlow, analyzing 5+ years market data for 23+ Indonesian blue chip stocks, achieving predictive accuracy for 30 days forecasts.',
+            'Integrated technical indicators and fundamental metrics using Yfinance API for comprehensive market analysis.',
+            'Created full stack application using Flask, AWS EC2, Next.js, TypeScript, and RESTful APIs for real-time stock market data visualization and analysis.',
+            'Optimized model using RobustScaler and early stopping, achieving [Y]% reduction in prediction error.'
          ],
-         imageUrl: '/images/spotify.png',
-         link: 'https://vue-spotify88-clone.vercel.app',
-         github: 'https://github.com/felixxmulya/vue-spotify'
+         imageUrl: '/images/bursalens.jpeg',
+         link: 'https://www.bursalens.xyz/',
+         github: 'https://github.com/felixxmulya/bursalens'
       },
       {
          title: 'Invoice System Management',
@@ -40,7 +42,17 @@ export default function Project() {
          imageUrl: '/images/invoice.png',
          link: 'https://mitrainvoice.vercel.app',
          github: 'https://github.com/felixxmulya/invoice-system'
-      }
+      },
+      {
+         title: 'Spotify Clone',
+         description: [
+            'Developed a Spotify clone application using Vue.js and integrated the Spotify API to fetch and display music data, enabling users to play music and browse playlists.',
+            'Implemented audio playback functionality that provided a seamless music listening experience, similar to Spotify.'
+         ],
+         imageUrl: '/images/spotify.png',
+         link: 'https://vue-spotify88-clone.vercel.app',
+         github: 'https://github.com/felixxmulya/vue-spotify'
+      },
    ];
 
    return (
@@ -158,7 +170,7 @@ export default function Project() {
             <div className="text-center">
                <button
                   onClick={() => setShowMore(!showMore)}
-                  className="px-4 py-2 transition duration-300"
+                  className="px-4 py-2 transition duration-300 animate-bounce"
                >
                   <FontAwesomeIcon icon={showMore ? faChevronUp : faChevronDown} size="xl" />
                </button>

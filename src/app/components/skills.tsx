@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGitAlt, faJsSquare, faNodeJs, faHtml5, faCss3Alt, faPython, faReact, faVuejs, faAngular, faAws, faLinux, faJira } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faCloud, faCube, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faGitAlt, faJsSquare, faNodeJs, faHtml5, faPython, faReact, faVuejs, faAngular, faAws, faLinux, faJira } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCloud, faCube, faChevronDown, faChevronUp, faFlask, faShareNodes, faBrush } from '@fortawesome/free-solid-svg-icons';
 
 export default function Skills() {
    const [showMore, setShowMore] = useState(false);
@@ -11,9 +11,8 @@ export default function Skills() {
          title: 'Programming Languages',
          skills: [
             { icon: faJsSquare, label: 'JavaScript' },
-            { icon: faNodeJs, label: 'Node.js' },
-            { icon: faHtml5, label: 'HTML' },
-            { icon: faCss3Alt, label: 'CSS' },
+            { icon: faJsSquare, label: 'TypeScript' },
+            { icon: faHtml5, label: 'HTML/CSS' },
             { icon: faPython, label: 'Python' },
          ],
       },
@@ -21,20 +20,24 @@ export default function Skills() {
          title: 'Frameworks/Libraries',
          skills: [
             { icon: faReact, label: 'React' },
+            { icon: faNodeJs, label: 'Node.js' },
+            { icon: faCube, label: 'Next.js' },
             { icon: faVuejs, label: 'Vue.js' },
             { icon: faAngular, label: 'Angular' },
+            { icon: faFlask, label: 'Flask' },
+            { icon: faFlask, label: 'TensorFlow' },
             { icon: faCube, label: 'Redux' },
-            { icon: faCube, label: 'GraphQL' },
          ],
       },
    ];
 
    const moreCategories = [
       {
-         title: 'Databases',
+         title: 'Databases & APIs',
          skills: [
             { icon: faDatabase, label: 'MySQL' },
             { icon: faDatabase, label: 'MongoDB' },
+            { icon: faCube, label: 'GraphQL' },
          ],
       },
       {
@@ -46,8 +49,8 @@ export default function Skills() {
             { icon: faCloud, label: 'Azure' },
             { icon: faLinux, label: 'Linux' },
             { icon: faJira, label: 'Jira' },
-            { icon: faCube, label: 'Tailwind' },
-            { icon: faCube, label: 'Bootstrap' },
+            { icon: faBrush, label: 'Tailwind' },
+            { icon: faShareNodes, label: 'Postman' },
          ],
       },
    ];
@@ -95,7 +98,7 @@ export default function Skills() {
          </div>
          <button
             onClick={() => setShowMore(!showMore)}
-            className="mt-8 px-4 py-2 transition duration-300 flex items-center"
+            className="mt-8 animate-bounce px-4 py-2 transition duration-300 flex items-center"
          >
             <FontAwesomeIcon icon={showMore ? faChevronUp : faChevronDown} size="xl" />
          </button>
