@@ -147,7 +147,7 @@ export default function Project() {
                                  target="_blank"
                                  rel="noopener noreferrer"
                               >
-                                 <FontAwesomeIcon icon={faUpRightFromSquare} className="mr-2" size="xl" />
+                                 <FontAwesomeIcon icon={faUpRightFromSquare} className="mr-2" />
                               </Link>
                            )}
                            {project.github && (
@@ -157,7 +157,7 @@ export default function Project() {
                                  target="_blank"
                                  rel="noopener noreferrer"
                               >
-                                 <FontAwesomeIcon icon={faGithub} className="mr-2" size="xl" />
+                                 <FontAwesomeIcon icon={faGithub} className="mr-2" />
                               </Link>
                            )}
                         </div>
