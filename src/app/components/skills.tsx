@@ -56,7 +56,7 @@ export default function Skills() {
    ];
 
    return (
-      <section id="skills" className="h-auto flex flex-col justify-center items-center mx-auto py-16 px-6">
+      <section id="skills" className="h-auto flex flex-col justify-center items-center mx-auto py-16 px-6 scroll-mt-24">
          <h1 className="text-4xl text-center mb-12">
             My <span className="font-bold">Skills</span>
          </h1>
@@ -77,7 +77,7 @@ export default function Skills() {
                   </div>
                </div>
             ))}
-            <div className={`transition-all duration-500 ease-in-out ${showMore ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden ${showMore ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                {moreCategories.map((category, idx) => (
                   <div className='mt-5' key={idx}>
                      <h2 className="text-2xl font-semibold mb-5 text-center">{category.title}</h2>

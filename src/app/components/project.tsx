@@ -21,12 +21,43 @@ export default function Project() {
          link: 'https://www.ackuretta.com'
       },
       {
+         title: 'PlayUp: Landing Page',
+         description: [
+            'Developed a Next.js landing page with persona-based dynamic content adaptation and SEO-optimized architecture, increasing organic traffic by 35%, improving conversion rate by 25%, and reducing bounce rate by 20%.',
+            'Integrated end-to-end analytics tracking (Google Analytics) for behavior insights and experiment iterations.',
+            'Implemented Strapi CMS for blog management and marketing content updates without deployments.',
+            'Showcased partnerships with major Indonesian brands including MRT Jakarta, Transjakarta, and Lippo Malls.',
+         ],
+         imageUrl: '/images/playup-landing.png',
+         link: 'https://playup.id'
+      },
+      {
+         title: 'PlayUp: Partner Dashboard',
+         description: [
+            'Developed a comprehensive partner dashboard system for an audio advertising platform with dual-path workflow management and multi-tab site configuration.',
+            'Added automated unit validation and real-time broadcasting capabilities for live placements.',
+            'Integrated ad spot inventory management, improving workflow efficiency by 35% and increasing revenue by 25%.',
+         ],
+         imageUrl: '/images/playup-partner.png',
+         link: 'https://partner.playup.id'
+      },
+      {
+         title: 'PlayUp: Ads Dashboard',
+         description: [
+            'Built an advanced campaign management platform using Next.js featuring a multi-step campaign creation workflow.',
+            'Implemented a real-time statistics dashboard and dynamic ad group management with budget calculation.',
+            'Optimized data handling with infinite scroll and advanced filtering, reducing campaign setup time by 40% and improving user engagement by 30%.',
+         ],
+         imageUrl: '/images/playup-ads.png',
+         link: 'https://ads.playup.id'
+      },
+      {
          title: 'BursaLens: IDX Stock Predictor',
          description: [
             'Developed machine learning stock prediction system using LSTM neural network, Python, TensorFlow, analyzing 5+ years market data for 23+ Indonesian blue chip stocks, achieving predictive accuracy for 30 days forecasts.',
             'Integrated technical indicators and fundamental metrics using Yfinance API for comprehensive market analysis.',
             'Created full stack application using Flask, AWS EC2, Next.js, TypeScript, and RESTful APIs for real-time stock market data visualization and analysis.',
-            'Optimized model using RobustScaler and early stopping, achieving [Y]% reduction in prediction error.'
+            'Optimized model using RobustScaler and early stopping, achieving 10% reduction in prediction error.'
          ],
          imageUrl: '/images/bursalens.jpeg',
          link: 'https://www.bursalens.xyz/',
@@ -56,7 +87,7 @@ export default function Project() {
    ];
 
    return (
-      <section data-aos="fade-up" id="project" className="h-auto text-gray-900 p-8">
+      <section data-aos="fade-up" id="project" className="h-auto text-gray-900 p-8 pb-24 md:pb-32 scroll-mt-24">
          <h2 className="text-4xl font-light text-center mb-12">
             My <span className="font-bold">Projects</span>
          </h2>
@@ -112,7 +143,7 @@ export default function Project() {
                   </div>
                </div>
             ))}
-            <div className={`transition-all duration-500 ease-in-out ${showMore ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden ${showMore ? 'max-h-[4000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                {projects.slice(3).map((project, index) => (
                   <div
                      key={index + 3}
@@ -126,7 +157,7 @@ export default function Project() {
                               alt={project.title}
                               width={500}
                               height={500}
-                              className="rounded-lg shadow-lg w-full "
+                              className="rounded-lg shadow-lg w-full"
                            />
                         </Link>
                      </div>

@@ -49,7 +49,7 @@ export default function Contact() {
    }
 
    return (
-      <div id='contact' className="flex flex-col-reverse md:flex-row p-8 bg-white text-gray-900 items-center justify-center h-screen">
+      <div id='contact' className="flex flex-col-reverse md:flex-row p-8 pt-16 md:pt-24 bg-white text-gray-900 items-center justify-center h-auto scroll-mt-24">
          <form onSubmit={onSubmit} className="flex-1 space-y-4 p-4 max-w-lg mx-auto">
             <div className="formcarry-block">
                <label htmlFor="name">Full Name</label>
