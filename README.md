@@ -1,4 +1,4 @@
-<h1 style="center">Hi, I'm Felix <img src="https://media.tenor.com/xFpNlXxL6oQAAAAi/hi-good-afternoon.gif" alt="Waving hand animation" style="width: 70px; vertical-align: bottom;"/></h1>
+<h1 style="center">Hi, my name is Felix <img src="https://media.tenor.com/xFpNlXxL6oQAAAAi/hi-good-afternoon.gif" alt="Waving hand animation" style="width: 70px; vertical-align: bottom;"/></h1>
 
 <h3 align="center">Full Stack Developer | Software Engineer</h3>
 
